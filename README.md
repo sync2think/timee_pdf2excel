@@ -1,5 +1,7 @@
 # timee_pdf2excel
 タイミーの源泉徴収票pdfをエクセルの一覧に変換するツール
+タイミーの源泉徴収票pdfは複数の会社の源泉徴収票が1つpdfファイルに纏まっています。
+確定申告には合計が必要なので一蘭を作成して合計を出力します。
 
 - 確認環境
   Windows11
@@ -15,6 +17,7 @@ requirements.txtを用意しているので必要に応じてインストール�
 1. pandas
 2. openpyxl
 3. PySide6
+4. pdfplumber
   pyinstallerもインストールしていますが、exe化のためなので通常不要です。
 
 - フォルダ構成
@@ -35,3 +38,7 @@ requirements.txtを用意しているので必要に応じてインストール�
    1. pythonを実行可能(仮想環境をactivateしてください。)
    2. .\srcに移動する。
    3. 「python timee_pdf2excel.py」を実行
+   
+   
+- その他
+   1. 出力サンプル.xlsx :
